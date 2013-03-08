@@ -1,8 +1,8 @@
 
 
-  <footer id="copyright" class="c100ip">
-  	<div class="c50ip date">&copy; Bravo DMS 2013</div>
-    <div class="c50ip logo">
+  <footer id="copyright" class="c100p">
+  	<div class="c50p date">&copy; Bravo DMS 2013</div>
+    <div class="c50p logo">
     	<a href="http://www.bravodms.com" target="_blank">
           <img id="bravodms-logo" src="includes/site-by-bravodms.png" />
     	</a>
@@ -21,29 +21,31 @@ var vpos;
 $$(document).ready(function() {
   $$("#mainPage").swipeRight(function(){
     viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewPortWidth < 600) {openMenu();}
+    if (viewPortWidth < 768) {toggleMenu();}
   });
   $$("#mainPage").swipeLeft(function(){
     viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewPortWidth < 600) {closeMenu();}
+    if (viewPortWidth < 768) {toggleMenu();}
   });
 });
 
+var open = 0;
+function toggleMenu() {
 
-function openMenu() {
-	vpos = (document.all ? document.scrollTop : window.pageYOffset);
-  document.getElementById("sideNav").className = "side-nav-open";
-	document.getElementById("mainPage").className = "main-page-closed";
-	document.getElementById('open-menu').style.display = 'none';
-	document.getElementById('close-menu').style.display = 'block';
-  scroll(0,0);
-}
-function closeMenu() {
-	document.getElementById("mainPage").className = "main-page-open";
-	document.getElementById("sideNav").className = "side-nav-closed";
-	document.getElementById('open-menu').style.display = 'block';
-	document.getElementById('close-menu').style.display = 'none';
-  document.body.scrollTop = vpos;
+  if (open == 0) {
+  	vpos = (document.all ? document.scrollTop : window.pageYOffset);
+    document.getElementById("sideNav").className = "side-nav-open";
+  	document.getElementById("mainPage").className = "main-page-closed";
+    scroll(0,0);
+    open = 1;
+  }
+
+  else if (open == 1) {
+  	document.getElementById("mainPage").className = "main-page-open";
+  	document.getElementById("sideNav").className = "side-nav-closed";
+    document.body.scrollTop = vpos;
+    open = 0;
+  }
 }
 
 </script>

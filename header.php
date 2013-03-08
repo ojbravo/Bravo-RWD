@@ -44,9 +44,10 @@
 </nav>
 
 <div id="mainPage" class="main-page-open">
-	<div class="mobile-menubar">				
+	
+    <div class="mobile-menubar">				
         <div id="open-menu">
-            <a onclick="openMenu();" class="menu-icon">
+            <a onclick="toggleMenu();" class="menu-icon">
                <i class="icon-reorder "></i>
             </a>
             <div id="dms-logo">
@@ -56,30 +57,22 @@
             </div>
             <div class="clr"></div> 
         </div>
-        <div id="close-menu" style="display:none;">
-            <a onclick="closeMenu();" class="menu-icon">
-                <i class="icon-reorder"></i>
-            </a><div id="dms-logo">
-                <a href="#">
-                    <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
-                </a>
-            </div>
-            <div class="clr"></div> 
-        </div>
     </div><!-- end mobile-menubar -->
-    <div class="c90ip float-center">
-        <a id="dms-logo" href="#">
-            <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
-        </a>
-    </div>
-    <div class="clr"></div>
-    <nav id="mainNav">
-        <div class="c90ip float-center">
 
+
+    <header class="desktop-only">
+        <div class="c90p float-center">
+            <a id="dms-logo" href="#">
+                <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
+            </a>
+        </div> 
+    </header>
+
+
+    <nav id="mainNav">
+        <div class="c90p float-center">
             <?php include "navigation.php" ?>
-            <div class="clr"></div>
-            
-            
+            <div class="clr"></div>  
         </div>
     </nav>
     

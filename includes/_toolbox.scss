@@ -16,8 +16,12 @@
 
 .mobile-only {display:block;}
 .desktop-only {display:none;}
-@media screen and (min-width: 600px) {.mobile-only {display:none;}}
-@media screen and (min-width: 768px) {.desktop-only {display:block;}}
+@media screen and (min-width: 768px) {
+	.mobile-only {display:none;}
+	.desktop-only {display:block;}
+}
+
+.indented-text {clear: both; padding:1em 8% 3em 8%;}
 
 #bravodms-logo {max-width:200px; max-height:20px;}
 
@@ -39,9 +43,7 @@
     BravoDMS Footer
 \*------------------------------------*/
 
-#copyright {
-	background-color:#fff;
-	color:#999; 
+#copyright { 
 	padding-top:2em; padding-bottom:3em;
 
 	.date, .logo {text-align:center; margin-bottom:1em;}

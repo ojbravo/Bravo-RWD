@@ -5,8 +5,8 @@ Theme Name: Bravo DMS 2013
 Theme URI: http://www.bravodms.com/
 Author: Omar J. Bravo (@ojbravo)
 Author URI: http://www.bravodms.com/
-Version: 3.0
-Updated: 02/26/2013
+Version: 1.0
+Updated: 03/08/2013
 Description: Lift Up Positive Communities through Dynamic Media
 */
 
@@ -45,10 +45,12 @@ Description: Lift Up Positive Communities through Dynamic Media
     Images
 \*------------------------------------*/
 img {width:100%; height:auto !important;}
-#dms-logo {max-height:61px; max-width:274px; width:70%; float:left; padding:.2em 0 0 0;}
-@media screen and (min-width: 600px){
-  #dms-logo{width:30%; padding:.3em 0 0 0;}
+
+#dms-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
+@media screen and (min-width: 768px){
+  #dms-logo{margin:.6em 0;}
 }
+
 a#dms-menu-logo {padding-left:1.25em; font-size:1.5em;}
 #dms-menu-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
 #dms-logo a:hover {background-color:inherit;}
@@ -59,6 +61,8 @@ a#dms-menu-logo {padding-left:1.25em; font-size:1.5em;}
     Layout Structure
 \*------------------------------------*/
 
+header {background-color:#333;}
+footer {background-color:#222; color:#999;}
 
 
 /*------------------------------------*\
