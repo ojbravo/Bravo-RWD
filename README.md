@@ -1,12 +1,12 @@
-<h2>What's Included:</h2>
-		<br>
-		This framework is a mashup of resources that I have put together in order to get my development workflow started as quickly as possible.
-		<br><br>
-		Please note that all of the CSS is compiled using Sass / Compass.  If you are not currently using CSS Preprocessing, start doing so now.  I recommend using <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a> (on a Mac), or the <a href="http://compass.handlino.com/" target="_blank">Compass app</a> (on a PC)
-		<br><br>
-		Here is a breakdown of the files and what they do:<br><br>
+## What's Included:
 
-		<h3>HTML (php) - </h3>
+		This framework is a mashup of resources that I have put together in order to get my development workflow started as quickly as possible.
+
+		Please note that all of the CSS is compiled using Sass / Compass.  If you are not currently using CSS Preprocessing, start doing so now.  I recommend using <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a> (on a Mac), or the <a href="http://compass.handlino.com/" target="_blank">Compass app</a> (on a PC)
+
+		Here is a breakdown of the files and what they do:
+
+###		HTML (php) -
 		<ul class="indented-text">
 		  	<li>index.php - The main page that calls in all other files via the php include command.<br><br></li>
 		  	<li>header.php - Includes the<br> <code>&lt;head&gt;&lt;/head&gt;<br>&lt;body&gt;<br>&lt;header&gt;&lt;/header&gt;,<br>&lt;nav&gt;&lt;nav&gt;</code>.<br><br></li>
