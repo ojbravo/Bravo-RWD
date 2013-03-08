@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Bravo DMS 2013
+Theme URI: http://www.bravodms.com/
+Author: Omar J. Bravo (@ojbravo)
+Author URI: http://www.bravodms.com/
+Version: 3.0
+Updated: 02/26/2013
+Description: Lift Up Positive Communities through Dynamic Media
+*/
+
+
+/*------------------------------------*\
+    Responsive PHP Site Framework
+	  author: Omar Jesus Bravo
+	  @ojbravo, www.bravodms.com
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    Initial CSS Files
+\*------------------------------------*/
+@import "includes/_reset";
+@import "compass";
+@import "includes/_bravo-grid-v16";
+
+/*------------------------------------*\
+    Variables & Mixins
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    Dependant CSS Files
+\*------------------------------------*/
+
+@import "includes/_toolbox";
+@import "includes/_typography";
+@import "includes/_bravo-menu-v5";
+@import "includes/_font-awesome";
+
+/*------------------------------------*\
+    Images
+\*------------------------------------*/
+img {width:100%; height:auto !important;}
+#dms-logo {max-height:61px; max-width:274px; width:70%; float:left; padding:.2em 0 0 0;}
+@media screen and (min-width: 600px){
+  #dms-logo{width:30%; padding:.3em 0 0 0;}
+}
+a#dms-menu-logo {padding-left:1.25em; font-size:1.5em;}
+#dms-menu-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
+#dms-logo a:hover {background-color:inherit;}
+
+
+
+/*------------------------------------*\
+    Layout Structure
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    SideNav Icons
+\*------------------------------------*/
+#mainNav i {display:none;}
+#sideNav i {display:inline; margin-right:.5em;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    Responsive CSS Grid v1.6
+	author: Omar Jesus Bravo
+	@ojbravo, www.bravodms.com
+\*------------------------------------*/
+// ip = iPad-Portrait, il = iPad-Landscape
+// wide-m = wide layout on mobile
+
+.c25ip, .c33ip, .c40ip, .c50ip, .c60ip, .c66ip, .c66ip-r, .c75ip, .c80ip, .c90ip, .c100ip, 
+.c25il, .c33il, .c40il, .c50il, .c60il, .c66il, .c75il, .c80il, .c90il, .c100il,
+.c25-4, .c33-3, .c50-2
+	{width:100%; padding:0 5%; margin:0 auto; overflow:hidden;}
+
+.wide-m {width:95%; padding:0 2.5% .25em 2.5%; margin:0 auto; overflow:hidden;}
+
+
+@media screen and (min-width: 768px) {
+	.c25-4, .c33-3, .c50-2 {float:left; width:50%; padding:0 1% 1em 1%;}
+
+	.c25ip, .c33ip, .c40ip, .c50ip, .c60ip, .c66ip, .c66ip-r, .c75ip, .c100ip {float:left;}
+
+	.c25ip {width:25%;} 
+	.c33ip {width:33%;} 
+	.c40ip {width:40%;} 
+	.c50ip {width:50%;} 
+	.c60ip {width:60%;} 
+	.c66ip {width:66%; padding-right:5%;} .c66ip-r {width:58.5%; padding-left:5%;} 
+	.c75ip {width:75%;} 
+	.c80ip {width:80%}
+	.c90ip {width:90%;} 
+	.c100ip {width:100%;} 
+}
+@media screen and (min-width: 1024px) {
+	.c25il, .c33il, .c40il, .c50il, .c60il, .c66il, .c75il, .c100il,
+	.c25il-np, .c33il-np, .c40il-np, .c50il-np, .c60il-np, .c66il-np, 
+	.c75il-np, .c100il-np {float:left;}
+	
+	.c25il {width:20%;} .c25il-np {width:25%; padding:0;}
+	.c33-3, .c33il {width:28%;} .c33il-np {width:33%; padding:0;}
+	.c40il {width:35%;} 
+	.c50il {width:45%;} 
+	.c60il {width:55%;} 
+	.c66il {width:61%;} 
+	.c75il {width:70%;} 
+	.c100il {width:95%;}
+}
+
+@media screen and (min-width: 1280px) {
+	.c25-4 {width:25%;}
+	.c90ip, .c80ip {max-width: 1350px;}
+}
+.np {padding:0;}
+.float-center {float:none; margin-left:auto; margin-right:auto;}
+
+/*------------------------------------*\
+    End Bravo Grid
+\*------------------------------------*/

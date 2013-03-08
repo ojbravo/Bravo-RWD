@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    Responsive Navigation Menu v5.0
+	author: Omar Jesus Bravo
+	@ojbravo, www.bravodms.com
+	Updated: 02/26/2013
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    Bravo Menu Variables
+\*------------------------------------*/
+$button-qty: 6; /* # of menu buttons */
+$body-bg: #ccc;
+$main-bg-color: #ccc; /* */
+$menu-bg-color: #fff;
+$menu-bg-hover: #ddd; /*  */
+$menu-text-color: #999;
+$menu-text-hover: #777; /*  */
+$submenu-bg-color: #999; /*  */
+$sidenav-bg-color: #333; /*  */
+$sidenav-bg-hover: #555;
+$mobile-menu-bg: #fff;
+$border-light:transparent;
+$border-dark:#ccc;
+$corner-radius: .25em;
+
+
+/* Mini Reset */
+#sideNav ul, #sideNav li, #mainNav ul, #mainNav li  {list-style:none; margin:0; padding:0;outline:0;font-size:100%;vertical-align:baseline;}
+
+#sideNav, #mainPage { /* adds sliding functionality of mobile menu */
+	min-height:100%; height: auto !important; height:100%;
+  -webkit-transition: all 0.3s ease-in-out; 
+	 -moz-transition: all 0.3s ease-in-out; 
+	   -o-transition: all 0.3s ease-in-out; 
+		  transition: all 0.3s ease-in-out;
+		  
+}
+
+#sideNav, #mainNav a { 
+font-family: Century Gothic, Verdana; font-size:20px; line-height:45px;}
+
+/*------------------------------------*\
+    Mobile Menu
+\*------------------------------------*/
+
+#sideNav {	
+	position:absolute;
+	width:80%; max-width:80%;
+	z-index:1;
+}
+	/* sideNav background-color = Dark Gray */
+body, #sideNav, #sideNav a {background-color:$sidenav-bg-color;}
+#sideNav a {
+	border: solid 0 #666666; 
+	border-width:0 0 1px 0;
+	clear:both;
+	color:#fff;
+	display:block;
+	font-size:16px;
+	line-height:45px; /* height for menu items */
+	padding:0 10%;
+	text-align:left;  
+}
+#sideNav a:hover {background-color:$sidenav-bg-hover;} /* sideNav hover styles :: light gray */
+#sideNav .subMenu a {padding:0 10% 0 20%; width:100%; display:block;}
+
+/* Open & Close sideNav */
+.side-nav-closed {left:0%;} .main-page-open {left:0%; position:absolute;}
+.side-nav-open {left:0%; width:80%;} .main-page-closed {left:80%; position:fixed;}
+
+
+#mainPage {  /* page wrapper for main content */
+	background-color:$main-bg-color;
+	width:100%;
+	z-index:2;
+	@include box-shadow(#000 0 0 1em .5em);
+}
+.mobile-menubar { /* menu button container */
+	background-color:$mobile-menu-bg;
+	clear:both; 
+	text-align:left;
+	width:100%; 
+} 
+.menu-icon {
+	border:solid 1px #ccc;
+	font-size:2em; 
+	margin:.2em .3em;
+ 	padding:0 .25em;
+ }
+#open-menu a, #close-menu a {float:left; color:#999;}
+#open-menu a:active, #close-menu a:active {float:left; color:#f63;}
+
+
+/*------------------------------------*\
+    Desktop Menu
+\*------------------------------------*/
+
+#mainNav {display:none; background-color:#fff; background-color: $menu-bg-color;}
+
+	/* Display mainNav */ /* mainNav background-color */
+#mainNav {height:75px; margin:0; overflow:visible; margin:0; padding:0; }
+
+/********************************
+	Format the MainNav Position 
+*********************************/
+#mainNav ul {width:100%; float:none;border-left:solid 1px $border-dark;border-right:solid 1px $border-light;}
+/********************************
+	End Format the MainNav Position 
+*********************************/
+
+
+	/* mainNav button width  ::  100% / # of buttons */
+#mainNav li {float:left; width:100% / $button-qty; border-left:solid 1px $border-light;border-right:solid 1px $border-dark;} 
+	/* mainNav button styles */
+#mainNav a {
+	clear:both;
+	color:$menu-text-color;
+	display:block;
+	font-size:12px;
+	height:75px;
+	line-height:75px;
+	padding:0 0%;
+	text-align:center;
+	width:100%;  
+}
+
+#mainNav a:hover {background-color: $menu-bg-hover; color:$menu-text-hover;} 
+
+	/* Display subMenu */
+.subMenu {overflow:hidden; position:relative; z-index:10}
+#mainNav li:hover .subMenu { overflow:visible; position:absolute; width:250px; } /* Make subMenu appear */
+	/* background-color for subMenu :: Dark Gray */
+#mainNav .subMenu li {background-color:$submenu-bg-color; float:none; width:100%; border:none;} 
+#mainNav .subMenu a {
+	color:$main-bg-color;
+	font-size:14px;
+	line-height:30px;
+	height:30px;
+	text-align:left;
+	padding-left:5%;
+	width:100%;
+}
+#mainNav .subMenu a:hover {background-color:$menu-bg-color; color:$menu-text-color;} /* Hover style for subMenu :: Yellow */
+
+.first, .first a {}
+.last, .last a {}
+
+/* Setting Active State for Menu Items */
+.home #home a,
+.about #about a,
+.gallery #gallery a,
+.services #services a,
+.contact #contact a
+.resources #resources a {}
+
+
+@media screen and (min-width: 600px) {
+	#mainPage {margin:0; padding:0;}
+		/* Hides Mobile button, sideNav, & subMenu */
+	#open-menu, #close-menu,.mobile-menubar, #sideNav {display:none;}
+	.subMenu {height:0;}
+	#mainNav {display:block;}
+}
+@media screen and (min-width: 768px) {
+	#mainNav a {font-size:15px;}
+}
+@media screen and (min-width: 1024px) {
+	#mainNav a {font-size:18px;}
+}
