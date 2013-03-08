@@ -6,29 +6,46 @@ Please note that all of the CSS is compiled using Sass / Compass.  If you are no
 
 Here is a breakdown of the files and what they do:
 
-###		HTML (php) -
-		<ul class="indented-text">
-		  	<li>index.php - The main page that calls in all other files via the php include command.<br><br></li>
-		  	<li>header.php - Includes the<br> <code>&lt;head&gt;&lt;/head&gt;<br>&lt;body&gt;<br>&lt;header&gt;&lt;/header&gt;,<br>&lt;nav&gt;&lt;nav&gt;</code>.<br><br></li>
-		  	<li>footer.php - Includes the javascript for the BravoMenu, and Scott Jehl's iOS Orientation Fix.<br><br></li>
-		  	<li>navigation.php - Simple unordered list of links for the BravoMenu.<br><br></li>
-		  	<li>config.rb - The Sass / Compass Configuration File.<br><br></li>
-		  </ul>  
+###	HTML (php) -
 
-		<h3>CSS (sass / compass) - </h3>
-		<ul class="indented-text">
-			<li>style.scss - Main stylesheet that imports all other _sass.scss files (listed below) and compiles them into the minified style.css.<br><br></li>
-			<li><a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">_reset.scss</a> - CSS Reset from Eric Meyer<br><br></li>
-			<li>_bravo-grid-v16.scss - Responsive Grid I rolled myself.<br><br></li>
-			<li>_bravo-menu-v5.scss - Responsive Menu I rolled myself.<br><br></li>
-			<li>_toobox.scss - Some useful utility classes that I use repeatedly.<br><br></li>
-			<li>_typography.scss - Basic type settings.<br><br></li>
-			<li><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">_font-awesome.scss</a> - Settings for Font-Awesome icon font.<br><br></li>
-		</ul>
+* index.php - The main page that calls in all other files via the php include command.
 
-		<h3>Javascript - </h3>
-		<ul class="indented-text">
-			<li><a href="https://github.com/aFarkas/html5shiv" target="_blank">html5shiv.js</a> - Makes older browsers recognize new HTML5 Elements.<br><br></li>
-			<li><a href="https://github.com/scottjehl/Respond" target="_blank">respond.min.js</a> - Makes older browsers recognize CSS Media Queries.<br><br></li>
-			<li><a href="http://quojs.tapquo.com/" target="_blank">quo.js</a> - Enables touch gestures (swipe left / right).</li>
-		</ul>
+* header.php - Includes the
+	<code>&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+	&lt;header&gt;&lt;/header&gt;,
+	&lt;nav&gt;&lt;nav&gt;</code>.
+
+* footer.php - Includes the javascript for the BravoMenu, and Scott Jehl's iOS Orientation Fix.
+		  	
+* navigation.php - Simple unordered list of links for the BravoMenu.
+
+* config.rb - The Sass / Compass Configuration File.
+		   
+
+### CSS (sass / compass) -
+		
+* style.scss - Main stylesheet that imports all other _sass.scss files (listed below) and compiles them into the minified style.css.
+
+* <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">_reset.scss</a> - CSS Reset from Eric Meyer
+
+* _bravo-grid-v16.scss - Responsive Grid I rolled myself.
+
+* _bravo-menu-v5.scss - Responsive Menu I rolled myself.
+
+* _toobox.scss - Some useful utility classes that I use repeatedly.
+
+* _typography.scss - Basic type settings.
+
+* <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">_font-awesome.scss</a> - Settings for Font-Awesome icon font.
+
+
+### Javascript -
+		
+* <a href="https://github.com/aFarkas/html5shiv" target="_blank">html5shiv.js</a> - Makes older browsers recognize new HTML5 Elements.
+
+* <a href="https://github.com/scottjehl/Respond" target="_blank">respond.min.js</a> - Makes older browsers recognize CSS Media Queries.
+
+* <a href="http://quojs.tapquo.com/" target="_blank">quo.js</a> - Enables touch gestures (swipe left / right).
+
+
