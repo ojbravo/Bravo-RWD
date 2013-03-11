@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta charset="UTF-8">
 
 <meta name="description" content="<?php echo $description ?>" />
 <meta name="keywords" content="Responsive Web Design, Web Development, Digital Marketing, Freelance Web Designer, St. Petersburg, FL" />
