@@ -29,7 +29,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <!--[if lt IE 9]>
-    <script type="text/javascript" src="includes/html5shiv.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script type="text/javascript" src="includes/respond.min.js"></script>
 <![endif]-->
 
