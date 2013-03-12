@@ -1,7 +1,6 @@
 
-
   <footer id="copyright" class="c100p">
-  	<div class="c50p date">&copy; Bravo DMS 2013</div>
+  	<div class="c50p date">&copy; Bravo DMS <?php $then = 2013; $now = date('Y'); if ($then == $now) echo $now; else echo "$then - $now"; ?></div> 
     <div class="c50p logo">
     	<a href="http://www.bravodms.com" target="_blank">
           <img id="bravodms-logo" src="includes/site-by-bravodms.png" />
