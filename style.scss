@@ -44,7 +44,7 @@ Description: Lift Up Positive Communities through Dynamic Media
 /*------------------------------------*\
     Images
 \*------------------------------------*/
-img {width:100%; height:auto !important;}
+img {max-width:100%; height:auto !important;}
 
 #dms-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
 @media screen and (min-width: 768px){

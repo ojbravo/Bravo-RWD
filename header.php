@@ -36,47 +36,47 @@
 </head>
 
 <body>
-<nav id="sideNav" class="side-nav-closed">
-    <a id="dms-menu-logo" href="index.php">
-        <img src="images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
-    </a>
-	<?php include "navigation.php" ?>
-</nav>
+    <nav id="sideNav" class="side-nav-closed">
+        <a id="dms-menu-logo" href="index.php">
+            <img src="images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
+        </a>
+    	<?php include "navigation.php" ?>
+    </nav>
 
-<div id="mainPage" class="main-page-open">
-	
-    <div class="mobile-menubar">				
-        <div id="open-menu">
-            <a onclick="toggleMenu();" class="menu-icon">
-               <i class="icon-reorder "></i>
-            </a>
-            <div id="dms-logo">
-                <a href="#">
+    <div id="mainPage" class="main-page-open">
+    	
+        <div class="mobile-menubar">				
+            <div id="open-menu">
+                <a onclick="toggleMenu();" class="menu-icon">
+                   <i class="icon-reorder "></i>
+                </a>
+                <div id="dms-logo">
+                    <a href="#">
+                        <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
+                    </a>
+                </div>
+                <div class="clr"></div> 
+            </div>
+        </div><!-- end mobile-menubar -->
+
+
+        <header class="desktop-only">
+            <div class="c90p float-center">
+                <a id="dms-logo" href="#">
                     <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
                 </a>
+            </div> 
+        </header>
+
+
+        <nav id="mainNav">
+            <div class="c90p float-center">
+                <?php include "navigation.php" ?>
+                <div class="clr"></div>  
             </div>
-            <div class="clr"></div> 
-        </div>
-    </div><!-- end mobile-menubar -->
-
-
-    <header class="desktop-only">
-        <div class="c90p float-center">
-            <a id="dms-logo" href="#">
-                <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
-            </a>
-        </div> 
-    </header>
-
-
-    <nav id="mainNav">
-        <div class="c90p float-center">
-            <?php include "navigation.php" ?>
-            <div class="clr"></div>  
-        </div>
-    </nav>
-    
-    <div class="line clr"></div>
+        </nav>
+        
+        <div class="line clr"></div>
 
 
 

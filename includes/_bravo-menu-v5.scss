@@ -37,7 +37,7 @@ $corner-radius: .25em;
 		  transition: all 0.3s ease-in-out;
 		  
 }
-
+#mainNav {font-size:0;} /* Removes blank spaces from menu */
 #sideNav, #mainNav a { 
 font-family: Century Gothic, Verdana; font-size:20px; line-height:45px;}
 
