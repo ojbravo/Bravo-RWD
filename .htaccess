@@ -12,16 +12,16 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 
 # 1 WEEK
-<FilesMatch "\.(ico|pdf|flv)$">
-Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
-<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
-Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
-<FilesMatch "\.(xml|txt|css|js)$">
-Header set Cache-Control "max-age=604800, proxy-revalidate"
-</FilesMatch>
+#<FilesMatch "\.(ico|pdf|flv)$">
+#Header set Cache-Control "max-age=604800, public"
+#</FilesMatch>
+#<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+#Header set Cache-Control "max-age=604800, public"
+#</FilesMatch>
+#<FilesMatch "\.(xml|txt|css|js)$">
+#Header set Cache-Control "max-age=604800, proxy-revalidate"
+#</FilesMatch>
 # 1 MIN
-<FilesMatch "\.(html|htm|php)$">
-Header set Cache-Control "max-age=60, private, proxy-revalidate"
-</FilesMatch>
+#<FilesMatch "\.(html|htm|php)$">
+#Header set Cache-Control "max-age=60, private, proxy-revalidate"
+#</FilesMatch>
