@@ -1,5 +1,8 @@
 AddDefaultCharset UTF-8
 
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
 # Compresses Text, HTML, Javascript, CSS & XML:
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html

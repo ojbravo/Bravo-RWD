@@ -37,7 +37,7 @@
 
 <body>
     <nav id="sideNav" class="side-nav-closed">
-        <a id="dms-menu-logo" href="index.php">
+        <a id="sideNav-logo" href="index.php">
             <img src="images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
         </a>
     	<?php include "navigation.php" ?>
@@ -50,7 +50,7 @@
                 <a onclick="toggleMenu();" class="menu-icon">
                    <i class="icon-reorder "></i>
                 </a>
-                <div id="dms-logo">
+                <div id="main-logo">
                     <a href="#">
                         <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
                     </a>
@@ -62,7 +62,7 @@
 
         <header class="desktop-only">
             <div class="c90p float-center">
-                <a id="dms-logo" href="#">
+                <a id="main-logo" href="#">
                     <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
                 </a>
             </div> 

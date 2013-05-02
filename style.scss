@@ -46,14 +46,15 @@ Description: Lift Up Positive Communities through Dynamic Media
 \*------------------------------------*/
 img {max-width:100%; height:auto !important;}
 
-#dms-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
+#main-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
+#main-logo a:hover {background-color:inherit;}
 @media screen and (min-width: 768px){
-  #dms-logo{margin:.6em 0;}
+  #main-logo{margin:.6em 0;}
 }
 
-a#dms-menu-logo {padding-left:1.25em; font-size:1.5em;}
-#dms-menu-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
-#dms-logo a:hover {background-color:inherit;}
+a#sideNav-logo {padding-left:1.25em; font-size:1.5em;}
+#sideNav-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
+
 
 
 
