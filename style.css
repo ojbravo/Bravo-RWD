@@ -325,6 +325,9 @@ ul, ol {
 }
 
 /*------------------------------------*\
+    Button Mixins
+\*------------------------------------*/
+/*------------------------------------*\
     Typography
 \*------------------------------------*/
 body {
@@ -457,7 +460,7 @@ body, #sideNav, #sideNav a {
 }
 
 /* sideNav hover styles :: light gray */
-#sideNav .subMenu a {
+#sideNav .sub-menu a {
   padding: 0 10% 0 20%;
   width: 100%;
   display: block;
@@ -521,16 +524,16 @@ body, #sideNav, #sideNav a {
 /*------------------------------------*\
     Desktop Menu
 \*------------------------------------*/
+/* Display mainNav */
+/* mainNav background-color */
 #mainNav {
   display: none;
   background-color: #fff;
   background-color: #cccccc;
 }
 
-/* Display mainNav */
-/* mainNav background-color */
 #mainNav {
-  height: 75px;
+  height: 50px;
   margin: 0;
   overflow: visible;
   margin: 0;
@@ -565,8 +568,8 @@ body, #sideNav, #sideNav a {
   color: #777777;
   display: block;
   font-size: 12px;
-  height: 75px;
-  line-height: 75px;
+  height: 50px;
+  line-height: 50px;
   padding: 0 0%;
   text-align: center;
   width: 100%;
@@ -578,13 +581,13 @@ body, #sideNav, #sideNav a {
 }
 
 /* Display subMenu */
-.subMenu {
+.sub-menu {
   overflow: hidden;
   position: relative;
   z-index: 10;
 }
 
-#mainNav li:hover .subMenu {
+#mainNav li:hover .sub-menu {
   overflow: visible;
   position: absolute;
   width: 250px;
@@ -592,14 +595,14 @@ body, #sideNav, #sideNav a {
 
 /* Make subMenu appear */
 /* background-color for subMenu :: Dark Gray */
-#mainNav .subMenu li {
+#mainNav .sub-menu li {
   background-color: #999999;
   display: block;
   width: 100%;
   border: none;
 }
 
-#mainNav .subMenu a {
+#mainNav .sub-menu a {
   color: #eeeeee;
   font-size: 14px;
   line-height: 30px;
@@ -609,7 +612,7 @@ body, #sideNav, #sideNav a {
   width: 100%;
 }
 
-#mainNav .subMenu a:hover {
+#mainNav .sub-menu a:hover {
   background-color: #cccccc;
   color: #777777;
 }
@@ -627,7 +630,7 @@ body, #sideNav, #sideNav a {
     display: none;
   }
 
-  .subMenu {
+  .sub-menu {
     height: 0;
   }
 

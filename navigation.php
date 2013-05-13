@@ -2,7 +2,7 @@
     <li><a href="#"><i class="icon-home"></i> Home</a></li>
     <li><a href="#"><i class="icon-home"></i>Services</a></li>
     <li><a href="#"><i class="icon-home"></i> Portfolio</a>
-        <ul class="subMenu">
+        <ul class="sub-menu">
             <li><a href="#"><i class="icon-home"></i>  Web</a></li>
             <li><a href="#"><i class="icon-home"></i>  Graphics</a></li>
             <li><a href="#"><i class="icon-home"></i>  Photo</a></li>
