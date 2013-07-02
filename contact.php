@@ -1,6 +1,15 @@
 <?php include "header.php" ?>
 
+<section>
+	<article>
+		
+	</article>
+	<aside>
+		<?php include "navigation.php" ?>
 
-<h1>Hello World</h1>
-<br><br><br>
+	</aside>
+</section>
+
+
+
 <?php include "footer.php" ?>

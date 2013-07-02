@@ -14,20 +14,8 @@
 <!-- *************************  -->
 <!--     Bravo-Menu Script      -->
 <!-- *************************  -->
-<script src="includes/quo.js"></script>
 <script type="text/javascript">
 var vpos;
-// Enables Swipe Menu
-$$(document).ready(function() {
-  $$("#mainPage").swipeRight(function(){
-    viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewPortWidth < 768) {toggleMenu();}
-  });
-  $$("#mainPage").swipeLeft(function(){
-    viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewPortWidth < 768) {toggleMenu();}
-  });
-});
 
 var open = 0;
 function toggleMenu() {

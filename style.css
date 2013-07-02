@@ -71,6 +71,11 @@ ul, ol {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
 /*------------------------------------*\
     Responsive CSS Grid v1.6
 	author: Omar Jesus Bravo
@@ -435,6 +440,21 @@ blockquote {
   width: 80%;
   max-width: 80%;
   z-index: 1;
+}
+
+a#sideNav-logo {
+  padding-left: 1.25em;
+  font-size: 1.5em;
+}
+
+#sideNav-logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#sideNav i {
+  display: inline;
+  margin-right: .5em;
 }
 
 /* sideNav background-color = Dark Gray */
@@ -1901,16 +1921,13 @@ ul.icons li [class*=" icon-"] {
 }
 
 /*------------------------------------*\
-    Images
+    Top Banner
 \*------------------------------------*/
-img {
-  max-width: 100%;
-  height: auto !important;
+header {
+  background-color: #333;
 }
 
 #main-logo {
-  max-height: 61px;
-  max-width: 274px;
   width: 70%;
   float: left;
   margin: 0.2em 0 0 0;
@@ -1925,38 +1942,17 @@ img {
     margin: 0.6em 0;
   }
 }
-a#sideNav-logo {
-  padding-left: 1.25em;
-  font-size: 1.5em;
-}
-
-#sideNav-logo img {
-  max-width: 49px;
-  max-height: 61px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /*------------------------------------*\
-    Layout Structure
+    Footer
 \*------------------------------------*/
-header {
-  background-color: #333;
-}
-
 footer {
   background-color: #222;
   color: #999;
 }
 
 /*------------------------------------*\
-    SideNav Icons
+    mainNav Icons
 \*------------------------------------*/
 #mainNav i {
   display: none;
-}
-
-#sideNav i {
-  display: inline;
-  margin-right: .5em;
 }

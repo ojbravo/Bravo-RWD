@@ -51,6 +51,12 @@ font-family: Century Gothic, Verdana; font-size:20px; line-height:45px;}
 	width:80%; max-width:80%;
 	z-index:1;
 }
+
+a#sideNav-logo {padding-left:1.25em; font-size:1.5em;}
+#sideNav-logo img {display:inline-block; vertical-align:middle;}
+#sideNav i {display:inline; margin-right:.5em;}
+
+
 	/* sideNav background-color = Dark Gray */
 body, #sideNav, #sideNav a {background-color:$sidenav-bg-color;}
 #sideNav a {

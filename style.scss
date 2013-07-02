@@ -42,35 +42,29 @@ Description: Lift Up Positive Communities through Dynamic Media
 @import "includes/_font-awesome";
 
 /*------------------------------------*\
-    Images
+    Top Banner
 \*------------------------------------*/
-img {max-width:100%; height:auto !important;}
 
-#main-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
+header {background-color:#333;}
+#main-logo {width:70%; float:left; margin:.2em 0 0 0;}
 #main-logo a:hover {background-color:inherit;}
 @media screen and (min-width: 768px){
   #main-logo{margin:.6em 0;}
 }
 
-a#sideNav-logo {padding-left:1.25em; font-size:1.5em;}
-#sideNav-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
-
-
-
 
 /*------------------------------------*\
-    Layout Structure
+    Footer
 \*------------------------------------*/
 
-header {background-color:#333;}
 footer {background-color:#222; color:#999;}
 
 
 /*------------------------------------*\
-    SideNav Icons
+    mainNav Icons
 \*------------------------------------*/
-#mainNav i {display:none;}
-#sideNav i {display:inline; margin-right:.5em;}
+#mainNav i {display:none;} // Remove icons from mainNav.
+
 
 
 
