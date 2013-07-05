@@ -12,46 +12,46 @@
 			box-sizing:border-box;
 }
 
-.c25p, .c33p, .c40p, .c50p, .c60p, .c66p, .c66p-r, .c75p, .c80p, .c90p, .c100p, 
+.c25p, .c33p, .c40p, .c50p, .c60p, .c66p, .c75p, .c80p, .c90p, .c100p, 
 .c25l, .c33l, .c40l, .c50l, .c60l, .c66l, .c75l, .c80l, .c90l, .c100l,
 .c25-4, .c33-3, .c50-2
 	{width:100%; padding:0 5%; margin:0 auto; overflow:hidden;}
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
 	.c25-4, .c33-3, .c50-2 {float:left; width:50%; padding:0 1% 1em 1%;}
 
-	.c25p, .c33p, .c40p, .c50p, .c60p, .c66p, .c66p-r, .c75p, .c100p {float:left;}
+	.c25p, .c33p, .c40p, .c50p, .c60p, .c66p, .c75p, .c80p, .c90p, .c100p {float:left;}
 
 	.c25p {width:25%;} 
 	.c33p {width:33%;} 
 	.c40p {width:40%;} 
 	.c50p {width:50%;} 
 	.c60p {width:60%;} 
-	.c66p {width:66%; padding-right:5%;} .c66p-r {width:58.5%; padding-left:5%;} 
+	.c66p {width:66%;}
 	.c75p {width:75%;} 
 	.c80p {width:80%}
 	.c90p {width:90%;} 
 	.c100p {width:100%;} 
 }
-@media screen and (min-width: 1024px) {
-	.c25l, .c33l, .c40l, .c50l, .c60l, .c66l, .c75l, .c100l,
-	.c25l-np, .c33l-np, .c40l-np, .c50l-np, .c60l-np, .c66l-np, 
-	.c75l-np, .c100l-np {float:left;}
+
+@media screen and (min-width: 60em) {
+	.c25l, .c33l, .c40l, .c50l, .c60l, .c66l, .c75l, .c80l, .c90l, .c100l {float:left;}
 	
-	.c25l {width:25%;}
-	.c33-3, .c33l {width:33%;}
+	.c25l {width:25%;} 
+	.c33l, .c33-3 {width:33%;} 
 	.c40l {width:40%;} 
 	.c50l {width:50%;} 
 	.c60l {width:60%;} 
-	.c66l {width:66%;} 
+	.c66l {width:66%;}
 	.c75l {width:75%;} 
-	.c100l {width:100%;}
+	.c80l {width:80%}
+	.c90l {width:90%;} 
+	.c100l {width:100%;} 
 }
 
 @media screen and (min-width: 1280px) {
 	.c25-4 {width:25%;}
-	.c90p, .c80p {max-width: 1350px;}
 }
 .np {padding:0;}
 .float-center {float:none; margin-left:auto; margin-right:auto;}

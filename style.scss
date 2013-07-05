@@ -6,7 +6,7 @@ Theme URI: http://www.bravodms.com/
 Author: Omar J. Bravo (@ojbravo)
 Author URI: http://www.bravodms.com/
 Version: 1.0
-Updated: 03/08/2013
+Updated: 06/04/2013
 Description: Lift Up Positive Communities through Dynamic Media
 */
 
@@ -28,8 +28,12 @@ Description: Lift Up Positive Communities through Dynamic Media
 /*------------------------------------*\
     Variables & Mixins
 \*------------------------------------*/
+@mixin mq($break-point) {
+    @media screen and (min-width: $break-point) { @content; }
+}
 
-
+$body-bg-color: #fff;
+$sideNav-bg-color: #333;
 
 
 /*------------------------------------*\
@@ -38,32 +42,52 @@ Description: Lift Up Positive Communities through Dynamic Media
 
 @import "includes/_toolbox";
 @import "includes/_typography";
-@import "includes/_bravo-menu-v5";
+@import "includes/_bravo-menu-v6";
 @import "includes/_font-awesome";
+
+
+/*------------------------------------*\
+    Foundation
+\*------------------------------------*/
+body {background-color: $sideNav-bg-color;}
+
+
 
 /*------------------------------------*\
     Top Banner
 \*------------------------------------*/
 
 header {background-color:#333;}
-#main-logo {width:70%; float:left; margin:.2em 0 0 0;}
-#main-logo a:hover {background-color:inherit;}
-@media screen and (min-width: 768px){
-  #main-logo{margin:.6em 0;}
+.logo {width:70%; margin:5% 0 0 0; display:inline-block;}
+.logo a:hover {background-color:inherit;}
+@include mq(40em) {
+    header {margin-bottom:3em;}
+    .logo{margin:1em 0;}
 }
 
 
 /*------------------------------------*\
-    Footer
+    BravoDMS Footer
 \*------------------------------------*/
 
 footer {background-color:#222; color:#999;}
+#copyright { 
+    padding-top:2em; padding-bottom:3em;
+
+    .date, .site-by {text-align:center; margin-bottom:1em;}
+    @media screen and (min-width: 768px) {
+        .date {text-align:left;}
+        .site-by {text-align:right;}
+    }
+}
 
 
 /*------------------------------------*\
     mainNav Icons
 \*------------------------------------*/
-#mainNav i {display:none;} // Remove icons from mainNav.
+// Remove / Display icons from mainNav.
+@include mq(40em){.mainNav i {display:none;}}
+@include mq(60em){.mainNav i {display:inline-block;}}
 
 
 

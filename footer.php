@@ -2,7 +2,7 @@
 
   <footer id="copyright" class="c100p">
   	<div class="c50p date">&copy; Bravo DMS 2013</div>
-    <div class="c50p logo">
+    <div class="c50p site-by">
     	<a href="http://www.bravodms.com" target="_blank">
           <img id="bravodms-logo" src="includes/site-by-bravodms.png" />
     	</a>
@@ -15,27 +15,17 @@
 <!--     Bravo-Menu Script      -->
 <!-- *************************  -->
 <script type="text/javascript">
-var vpos;
-
 var open = 0;
 function toggleMenu() {
-
   if (open == 0) {
-  	vpos = (document.all ? document.scrollTop : window.pageYOffset);
-    document.getElementById("sideNav").className = "side-nav-open";
-  	document.getElementById("mainPage").className = "main-page-closed";
-    scroll(0,0);
+    document.getElementById("mainPage").className = "open";
     open = 1;
   }
-
   else if (open == 1) {
-  	document.getElementById("mainPage").className = "main-page-open";
-  	document.getElementById("sideNav").className = "side-nav-closed";
-    document.body.scrollTop = vpos;
+    document.getElementById("mainPage").className = "closed";
     open = 0;
   }
 }
-
 </script>
 <!-- *************************  -->
 <!--    End Bravo-Menu          -->

@@ -36,45 +36,17 @@
 </head>
 
 <body>
-    <nav id="sideNav" class="side-nav-closed">
-        <a id="sideNav-logo" href="index.php">
-            <img src="images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
-        </a>
-    	<?php include "navigation.php" ?>
-    </nav>
-
-    <div id="mainPage" class="main-page-open">
-    	
-        <div class="mobile-menubar">				
-            <div id="open-menu">
-                <a onclick="toggleMenu();" class="menu-icon">
-                   <i class="icon-reorder "></i>
-                </a>
-                <div id="main-logo">
-                    <a href="#">
-                        <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
-                    </a>
-                </div>
-                <div class="clr"></div> 
-            </div>
-        </div><!-- end mobile-menubar -->
-
-
-        <header class="desktop-only">
-            <div class="c90p float-center">
-                <a id="main-logo" href="#">
-                    <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
-                </a>
-            </div> 
+    <nav class="mainNav" role='navigation'>
+        <?php include "navigation.php" ?>
+    </nav> 
+    <div id="mainPage">
+        <header class="group">
+            <a href="#" class="menu-btn" onclick="toggleMenu();"><i class="icon-reorder"></i></a>
+            <div class="logo c66p">
+                <img src="images/bravodms-logo.png" alt="Bravo DMS Logo">
+            </div>    
         </header>
-
-
-        <nav id="mainNav">
-            <div class="c90p float-center">
-                <?php include "navigation.php" ?>
-                <div class="clr"></div>  
-            </div>
-        </nav>
+        
         
         <div class="line clr"></div>
 

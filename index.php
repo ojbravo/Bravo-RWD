@@ -60,7 +60,6 @@
 		<ul class="indented-text">
 			<li><a href="https://github.com/aFarkas/html5shiv" target="_blank">html5shiv.js</a> - Makes older browsers recognize new HTML5 Elements.<br><br></li>
 			<li><a href="https://github.com/scottjehl/Respond" target="_blank">respond.min.js</a> - Makes older browsers recognize CSS Media Queries.<br><br></li>
-			<li><a href="http://quojs.tapquo.com/" target="_blank">quo.js</a> - Enables touch gestures (swipe left / right).</li>
 		</ul>
 	</article>
 	<aside class="c33p">

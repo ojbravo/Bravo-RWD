@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    Responsive Navigation Menu v6.0
+		author: Omar Jesus Bravo
+		@ojbravo, www.bravodms.com
+		Updated: 06/04/2013
+\*------------------------------------*/
+
+$sideNav-text-color:#ccc;
+$main-bg-color:#f60;
+$main-text-color:#fff;
+$main-margin-top:5em;
+
+#mainPage, .mainNav {width:100%; position:absolute;}
+
+#mainPage {
+  background-color:$body-bg-color;
+  min-height:100%;
+  z-index:1;  
+  @include single-transition (left, .25s, ease-in-out, 0s);
+}
+
+.closed {left:0%;}
+.open {left:80%; position:fixed;}
+
+.menu-btn {
+  cursor:pointer; 
+  display:inline-block;
+  font-size:3em;
+  padding:.25em;
+  text-decoration:none;
+  vertical-align:top;
+  width:20%;
+  
+  &:link, &:visited, &:active, &:focus {color:#555;}
+  &:hover {color:#f60}
+}
+
+@media screen and (min-width: 40em) {
+  .menu-btn {display:none;}        
+}
+
+
+.mainNav {
+  font-family: Tahoma, Geneva, sans-serif;
+  z-index:0;
+  
+  a, a:link, a:visited, a:active, a:focus {
+    border: 0px solid lighten($sideNav-bg-color,7%);
+    border-width: 0 0 1px 0;
+    color:$sideNav-text-color;
+    display:block;
+    line-height: 3em;
+    padding:0 1em;
+    text-decoration:none;
+    @include single-transition (background-color, .2s, ease-in-out, 0s);
+  }
+  a:hover {background-color:$main-bg-color; color:lighten($sideNav-text-color,20%);}
+  .sub-menu a {padding-left:10%;}
+  i {padding-right:.25em;}
+  ul, li {margin:0; padding:0; list-style-type: none;}
+}
+
+@media screen and (min-width: 40em) {
+  .mainNav {
+    background-color:$main-bg-color;
+    text-align:center;
+    top:$main-margin-top;
+    width:100%;
+    z-index:10;
+                     
+    >ul {font-size:0;}
+    ul>:first-child {border-left: 1px solid darken($main-bg-color, 5%);}
+    ul>:last-child {border-right: 1px solid lighten($main-bg-color, 13%);}
+    li {display:inline-block; font-size:18px;}
+    a, a:link, a:visited, a:active, a:focus {
+      border-width:0;
+      border-right: 1px solid darken($main-bg-color, 5%);
+      border-left: 1px solid lighten($main-bg-color, 13%);
+      color:$main-text-color;
+      text-decoration:none;
+    }
+    a:hover {background-color: lighten($main-bg-color, 10%);}
+    li:hover .sub-menu {display:block;}
+
+    .sub-menu {
+      display:none;        
+      position:absolute;
+      background-color: darken($main-bg-color, 5%);
+      border-top: 1px solid darken($main-bg-color, 15%);
+      text-align:left;
+      
+              
+      li {display:block; border:0;}
+      a {border:0; width:10em;}
+       
+    }
+	}      
+}
