@@ -1,4 +1,4 @@
-# BravoDMS Responsive (Mobile First) Framework
+## BravoDMS Responsive (Mobile First) Framework
 
 This framework is a mashup of resources that I have put together in order to get my development workflow started as quickly as possible.
 
