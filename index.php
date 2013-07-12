@@ -5,7 +5,7 @@
 <br><br>
 <section class="c90p float-center">
 	<article class="c66p">
-		<h1>BravoDMS Responsive Framework v5.5</h1>
+		<h1>BravoDMS Responsive Framework v6.0</h1>
 		<h4>A Gift to My Students</h4>
 		<br>
 		It is my firm belief that true greatness is never achieved alone.  Whether you're starting a business, raising a family, or simply making a website, there are always many people who have contributed to your success.  In the Web Design industry, we regularly "borrow" from the discovery and innovation of others.  And though this might not be acceptable in other industries, this is often times the way we we learn.

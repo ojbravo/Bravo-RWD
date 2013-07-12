@@ -31,7 +31,9 @@ function toggleMenu() {
 <!--    End Bravo-Menu          -->
 <!-- *************************  -->
 
-
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="includes/respond.min.js"></script>
+<![endif]-->
 
 <script type="text/javascript">
 /*! A fix for the iOS orientationchange zoom bug.

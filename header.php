@@ -11,7 +11,7 @@
 
 <meta name="robots" content="all" />
 <meta name="author" content="Omar Jesus Bravo, Bravo DMS" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Facebook Tags -->
 <meta property="fb:admins" content="Facebook Username"/>
@@ -30,7 +30,6 @@
 
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script type="text/javascript" src="includes/respond.min.js"></script>
 <![endif]-->
 
 </head>
